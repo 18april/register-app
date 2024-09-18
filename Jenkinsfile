@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Checkout from Git") {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/18april/register-app.git'
+                git branch: 'master', credentialsId: 'github', url: 'https://github.com/18april/register-app.git'
             }
         }
         stage("Build") {
